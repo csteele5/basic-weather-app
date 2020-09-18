@@ -71,7 +71,7 @@ app.get('/about', (req, res) => {
     const context = {
         title: 'Weather Application',
         pageHeader: "About!",
-        body: "Body stuff related to about goes down here!",
+        body: "I've got 99 problems and node ain't one.",
         name: "Charles Steele",
         profileImage: "passportphoto.jpg",
         pageJSLink: "/static/js/blank.js"

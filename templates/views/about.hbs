@@ -1,10 +1,17 @@
 {{>header }}
 {{!-- {{>navbar }} --}}
 
-    <p>User: {{ name }}</p>
+    {{!-- <p>User: {{ name }}</p> --}}
+    <p>This site was created by Charles Steele.  It uses data from the following services:</p>
+    <ul>
+        <li><a href="https://www.mapbox.com/">Map Box</a> - Geolocation data</li>
+        <li><a href="https://weatherstack.com/">Weather Stack</a> - Weather data</li>
+        <li><a href="https://www.iqair.com/">IQ Air</a> -Air Quality data</li>
+    </ul>
+
     <img class="profile" src="../img/{{ profileImage }}">
 
-    <div>{{ body }}</div>
-    <a href="/badlink">bad link test</a>
+    <div><p>{{ body }}</p></div>
+    {{!-- <a href="/badlink">bad link test</a> --}}
 
 {{>footer }}

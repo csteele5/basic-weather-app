@@ -62,36 +62,8 @@ button {
     padding: 8px;
 }
 
-/* obsolete styles */
 
-ul {
-    list-style-type: none;
-    /* background-image: url(navi_bg.png); */
-    height: 20px;
-    width: 663px;
-    /* margin: auto; */
-    padding-inline-start: 0px !important;
-    }
-
-li {
-    float: left;
-}
-
-ul a {
-    /* background-image: url(navi_bg_divider.png);
-    background-repeat: no-repeat;
-    background-position: right; */
-    padding-right: 8px;
-    padding-left: 8px;
-    display: block;
-    line-height: 20px;
-    text-decoration: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 21px;
-    color: #371C1C;
-    }
-
-div.blockMessage {
+/* div.blockMessage {
     padding: 50px
-}
+} */
 
