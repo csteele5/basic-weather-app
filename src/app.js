@@ -60,7 +60,7 @@ app.get('/help', (req, res) => {
     const context = {
         title: 'Weather Application',
         pageHeader: "Help!",
-        helpMessage: "You don't really need help... that would be pathetic.",
+        helpMessage: "You don't really need help... that would be pathetic.  But just in case:",
         name: "Charles Steele",
         pageJSLink: "/static/js/blank.js"
     }
