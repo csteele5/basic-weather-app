@@ -42,7 +42,39 @@ app.use('/static', express.static(publicDirectoryPath));
 // app.com/help
 // app.com/about
 
-const navlinks = '<ul><li><a href="/">Home</a></li><li><a href="/weather">Weather</a></li><li><a href="/about">About</a></li><li><a href="/help">Help</a></li><li><a href="/json">JSON</a></li></ul>'
+// set up temporary list of favorite locations until database is integrated
+const favAddresses = [
+    {
+        "address": "Bend, Oregon"
+    },
+    {
+        "address": "Portland, Oregon"
+    },
+    {
+        "address": "Palo Alto, CA"
+    },
+    {
+        "address": "Shingle Springs, CA"
+    },
+    {
+        "address": "Moab, UT"
+    },
+    {
+        "address": "Cottonwood Heights, UT"
+    },
+    {
+        "address": "Park City, UT"
+    },
+    {
+        "address": "Mammoth Lakes, CA"
+    },
+    {
+        "address": "Cayucos, CA"
+    },
+    {
+        "address": "Huntington Beach, CA"
+    }
+]
 
 // route setup
 app.get('', (req, res) => {
@@ -51,7 +83,8 @@ app.get('', (req, res) => {
         pageHeader: "Weather",
         body: "Enter a search location to retrieve weather.",
         name: "Charles Steele",
-        pageJSLink: "/static/js/app.js"
+        pageJSLink: "/static/js/app.js",
+        favAddresses
     }
     res.render('index', context)
 })

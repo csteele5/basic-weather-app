@@ -13,4 +13,11 @@
     <p id="searchResults2"></p>
     <p id="searchResults3"></p>
 
+    <h4>Select a location from Favorites</h4>
+    <ul>
+        {{#each favAddresses}}
+            <li><a href="#" class="favLocationLink" data-val="{{ address }}">{{ address }}</a></li>
+        {{/each}}
+    </ul>
+
 {{>footer }}

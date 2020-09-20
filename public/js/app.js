@@ -40,3 +40,18 @@ weatherForm.addEventListener('submit', (e) => {
     })
 })
 
+
+var favoriteLinks = document.getElementsByClassName("favLocationLink");
+
+var parseAddress = function() {
+    var selAddress = this.getAttribute("data-val");
+
+    searchValue.value = selAddress;
+    
+    var event = new Event('submit');  // (*)
+    weatherForm.dispatchEvent(event);
+};
+
+for (var i = 0; i < favoriteLinks.length; i++) {
+    favoriteLinks[i].addEventListener('click', parseAddress, false);
+}
