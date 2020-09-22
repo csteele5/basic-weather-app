@@ -37,6 +37,8 @@ weatherForm.addEventListener('submit', (e) => {
                 // console.log("Weather: ", data.weather)
             }
         })
+    }).catch((error) => {
+        searchResults1.innerHTML = "Error: " + error
     })
 })
 
