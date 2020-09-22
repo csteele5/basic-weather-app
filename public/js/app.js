@@ -19,6 +19,7 @@ weatherForm.addEventListener('submit', (e) => {
     searchResults1.textContent = "Loading..."
     searchResults2.textContent = ""
     searchResults3.textContent = ""
+    alert(location)
     fetch('weather?address='+location).then((response) => {
         
         response.json().then((data) => {
@@ -50,8 +51,8 @@ var parseAddress = function() {
 
     searchValue.value = selAddress;
     
-    //var event = new Event('submit');  // (*)
-    //weatherForm.dispatchEvent(event);
+    var event = new Event('submit');  // (*)
+    weatherForm.dispatchEvent(event);
 };
 
 for (var i = 0; i < favoriteLinks.length; i++) {
