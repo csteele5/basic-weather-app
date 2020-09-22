@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', (e) => {
     searchResults1.textContent = "Loading..."
     searchResults2.textContent = ""
     searchResults3.textContent = ""
-    alert(location)
+    //alert(location)
     fetch('weather?address='+location).then((response) => {
         
         response.json().then((data) => {
