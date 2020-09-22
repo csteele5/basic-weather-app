@@ -50,8 +50,8 @@ var parseAddress = function() {
 
     searchValue.value = selAddress;
     
-    var event = new Event('submit');  // (*)
-    weatherForm.dispatchEvent(event);
+    //var event = new Event('submit');  // (*)
+    //weatherForm.dispatchEvent(event);
 };
 
 for (var i = 0; i < favoriteLinks.length; i++) {
